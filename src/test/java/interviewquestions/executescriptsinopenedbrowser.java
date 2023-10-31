@@ -7,6 +7,12 @@ public class executescriptsinopenedbrowser {
 
     public static void main(String[] args) {
 
+
+    }
+
+
+    public static void main1(String[] args) {
+
         Map<Integer, String> hamp= new HashMap<>();
 
         hamp.put(100,"Vijay");

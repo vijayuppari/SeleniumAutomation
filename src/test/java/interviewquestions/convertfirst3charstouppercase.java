@@ -13,8 +13,8 @@ public class convertfirst3charstouppercase {
     public static void main(String[] args) {
 
         //WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.facebook.com/sravani.alli/photos/?paipv=0&eav=AfY2tq7ss8rWaDxTwGIbhz4cRtEhKxtl3zUVFddL8XGE6VezvffLcHAelibXKNguQGY");
+        //WebDriver driver = new ChromeDriver();
+        //driver.get("https://www.facebook.com/sravani.alli/photos/?paipv=0&eav=AfY2tq7ss8rWaDxTwGIbhz4cRtEhKxtl3zUVFddL8XGE6VezvffLcHAelibXKNguQGY");
 
         List<Character> listofarray = Arrays.asList('a', 'b', 'c', 'd', 'e');
         //listofarray.stream().map(Character.)

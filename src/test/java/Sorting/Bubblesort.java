@@ -23,23 +23,31 @@ public class Bubblesort {
 
     }
 
-    public static boolean bubblesort(int[] arr){
+    public static void bubblesort(int[] arr){
 
-        boolean flag=false;
-        for(int i=0;i<arr.length;i++){
-            for(int j=1;j<arr.length-i;j++){
-                if(arr[j]<arr[j-1]){
-                    int temp=arr[j];
-                    arr[j]=arr[j-1];
-                    arr[j-1]=temp;
-                    flag=true;
-                }
+        // ex: iteration 1:5, 4, 3,2,1
+        // 4,5,3,2,1
+        //4,3,5,2,1
+        //4,3,2,5,1
+        //4,3,2,1,5
+        // ex: iteration 2: 4,3,2,1,5
+        // 3,4,2,1,5
+        //3,2,4,1,5
+        //3,2,1,4,5
+        // ex: iteration 3: 3,2,1,4,5
+        // 2,3,1,4,5
+        //2,1,3,4,5
+        // ex: iteration 4: 2,1,3,4,5
+        // 1,2,3,4,5
 
-            }
-            if((!flag || flag) == false){
-                break;
-            }
-        }
-        return flag;
+      for(int i=0;i<arr.length;i++){
+          for(int j=1;j<arr.length-i;j++){
+              if(arr[j]<arr[j-1]){
+                  int temp= arr[j];
+                  arr[j]= arr[j-1];
+                  arr[j-1]= temp;
+              }
+          }
+      }
     }
 }

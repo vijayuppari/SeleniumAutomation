@@ -36,7 +36,8 @@ public class GreatString {
     }
 
     public static void main(String[] args) {
-
+        //le=le
+        //eE
         System.out.println(Stringgreat("leEeetcode"));
         System.out.println(Stringgreat("abBAcC"));
 
