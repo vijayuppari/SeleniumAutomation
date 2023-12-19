@@ -11,6 +11,4 @@ public class Department {
     String depname;
     String depsalary;
 
-
-
 }

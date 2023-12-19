@@ -29,7 +29,7 @@ public class ACimpl implements Apollo,Care{
         ap.radiology();
         ap.sales();
 
-      /*  Care ca = new ACimpl();
+      /* Care ca = new ACimpl();
         ca.radiology();*/
     }
 }

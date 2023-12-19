@@ -34,15 +34,18 @@ public class NthHihestsalaryinmap {
         //hmap.forEach((k,v)-> System.out.println(k + " " + v));
 
         // Print hashmap based on Key
-        /*List<Map.Entry<String, Integer>> sortbykey = hmap.entrySet().stream().sorted(Map.Entry.comparingByKey()).collect(Collectors.toList());
-        System.out.println(sortbykey);*/
+        List<Map.Entry<String, Integer>> sortbykey = hmap.entrySet().stream().sorted(Map.Entry.comparingByKey()).collect(Collectors.toList());
+        System.out.println(sortbykey);
+
+        List<Map.Entry<String, Integer>> sortbyvalue = hmap.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toList());
+        System.out.println(sortbyvalue);
 
         // Print hashmap based on values
        /* List<Map.Entry<String, Integer>> sortbyvalue = hmap.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).collect(Collectors.toList());
         System.out.println(sortbyvalue);*/
 
         // get nth highest
-       // System.out.println(nthhighestsalary(2,hmap1));
+       //System.out.println(nthhighestsalary(2,hmap));
         System.out.println(dynamicnthhighestsalary(1,hmap1));
 
     }

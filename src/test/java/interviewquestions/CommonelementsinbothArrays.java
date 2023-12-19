@@ -13,7 +13,7 @@ public class CommonelementsinbothArrays {
         int abc[]= {7,2,4,67,10,17};
         List<Integer> list1 = Arrays.asList(34, 56, 7, 30, 321, 45);
         List<Integer> list2 = Arrays.asList(341, 7, 17, 310, 21, 30);
-       // fetchCommonelements(xyz,abc);
+        fetchCommonelements(xyz,abc);
         fetchCommonelementslist(list1,list2);
 
     }
