@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BinarySearch {
     // Binary Search is applicable only for Sorted Array
 
-    //Calculate the mid and compare the mid element with the key. If the key is less than mid element,
+    //Calculate the mid and compare the mid-element with the key. If the key is less than mid-element,
     // move to left and if it is greater than the mid then move search space to the right.
 
     public static void main(String[] args) {

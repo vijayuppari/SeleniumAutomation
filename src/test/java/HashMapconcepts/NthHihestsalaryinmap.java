@@ -1,9 +1,6 @@
 package HashMapconcepts;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class NthHihestsalaryinmap {
@@ -35,18 +32,29 @@ public class NthHihestsalaryinmap {
 
         // Print hashmap based on Key
         List<Map.Entry<String, Integer>> sortbykey = hmap.entrySet().stream().sorted(Map.Entry.comparingByKey()).collect(Collectors.toList());
-        System.out.println(sortbykey);
+        System.out.println("Map print based on Key " + sortbykey);
+
+        System.out.println("--------**************************--------");
 
         List<Map.Entry<String, Integer>> sortbyvalue = hmap.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toList());
-        System.out.println(sortbyvalue);
+        System.out.println("Map print based on Value " + sortbyvalue);
+
+        System.out.println("--------**************************--------");
 
         // Print hashmap based on values
-       /* List<Map.Entry<String, Integer>> sortbyvalue = hmap.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).collect(Collectors.toList());
-        System.out.println(sortbyvalue);*/
+        List<Map.Entry<String, Integer>> sortbyvalue1 = hmap.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).collect(Collectors.toList());
+        System.out.println("Map print based on Value on Desc  " + sortbyvalue1);
+
+        System.out.println("--------**************************--------");
+
 
         // get nth highest
-       //System.out.println(nthhighestsalary(2,hmap));
-        System.out.println(dynamicnthhighestsalary(1,hmap1));
+       System.out.println(nthhighestsalary(2,hmap));
+
+       System.out.println("--------**************************--------");
+
+        // Incase values are duplicate we need findout dynamically
+        System.out.println(dynamicnthhighestsalary(2,hmap1));
 
     }
 

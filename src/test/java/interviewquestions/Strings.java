@@ -1,6 +1,8 @@
 package interviewquestions;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Strings {
 
@@ -22,7 +24,7 @@ public class Strings {
         //String str= "naveen";
         //System.out.println(str.substring(1,str.length()));
 
-
+        // Approach 1:
         String str = "naveen automation labs";
         String[] splitteddstr = str.split(" ");
 
@@ -30,6 +32,12 @@ public class Strings {
             String firstchar = s.substring(0, 1).toUpperCase() + ""+ s.substring(1).toLowerCase();
              System.out.println(firstchar);
         }
+
+        // Approach 2:
+        String str1 = "mukesh otwani raghav";
+        String[] splitteddstr1 = str1.split(" ");
+        List<String> collect = Arrays.stream(splitteddstr1).map(ele -> ele.substring(0, 1).toUpperCase() + ele.substring(1).toLowerCase()).collect(Collectors.toList());
+        System.out.println(collect);
 
 
     }
