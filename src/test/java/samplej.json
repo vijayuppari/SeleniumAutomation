@@ -1,0 +1,23 @@
+{
+  "value":
+          [
+            {
+              "name":"vijay" ,
+              "empid": "vijay@gmail.com",
+              "location":
+              {
+                "state": "USA",
+                "zip": "90074"
+              }
+            },
+            {
+              "name":"Dinesh" ,
+              "empid": "dinesh@gmail.com",
+              "location":
+              {
+                "state": "India",
+                "zip": "500010"
+              }
+            }
+          ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing" parallel="tests" thread-count="3" verbose="3">
+    <test name=" Testing with Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="naveenautomationlabs.WebDrivermanagermain">
+            </class>
+        </classes>
+    </test>
+    <test name=" Testing with Chrome1">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="naveenautomationlabs.WebDrivermanagermain">
+            </class>
+        </classes>
+    </test>
+    <test name=" Testing with Edge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="naveenautomationlabs.WebDrivermanagermain">
+            </class>
+        </classes>
+    </test>
+    <test name=" Testing with Edge1">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="naveenautomationlabs.WebDrivermanagermain">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Testing" parallel="tests">
+    <test name=" Cross Browser Testing with Chrome">
+        <parameter name="Browser" value="Chrome"></parameter>
+        <classes>
+            <class name="crossbrowsertesting.Crossbrowserwithparallel">
+            </class>
+        </classes>
+    </test>
+    <test name=" Cross Browser Testing with Edge">
+        <parameter name="Browser" value="Edge"></parameter>
+        <classes>
+            <class name="crossbrowsertesting.Crossbrowserwithparallel">
+            </class>
+        </classes>
+    </test>
+</suite>

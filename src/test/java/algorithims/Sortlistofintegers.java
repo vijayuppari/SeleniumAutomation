@@ -20,6 +20,11 @@ public class Sortlistofintegers {
         Integer max = list2.stream().max(Integer::compare).get();
         System.out.println(max);
 
+        // min number in the list of integers
+        List<Integer> list5 = Arrays.asList(12,4,56,12,10);
+        Integer min = list2.stream().min(Integer::compare).get();
+        System.out.println("Minimum in the in the given Array List " + min);
+
         // Find the count in the list of integers
         List<Integer> list3 = Arrays.asList(12,4,56,12,10);
         long count = list2.stream().count();
@@ -27,14 +32,14 @@ public class Sortlistofintegers {
 
         // Remove duplicate in the list of integers
         Set<Integer> hset = new HashSet<>();
-        List<Integer> list4 = Arrays.asList(12,4,56,12,10);
+        List<Integer> list4 = Arrays.asList(12,4,56,12,10,4);
         List<Integer> collect1 = list4.stream().filter(e -> !hset.add(e)).collect(Collectors.toList());
-        System.out.println(collect1);
+        System.out.println("Duplicates "  +collect1);
 
         // Find the duplicate in the list of integers
-        List<Integer> list5 = Arrays.asList(12,4,56,12,10);
-        Set<Integer> collect2 = list2.stream().collect(Collectors.toSet());
-        System.out.println(collect2);
+        List<Integer> list50 = Arrays.asList(12,4,56,12,10);
+        Set<Integer> collect2 = list50.stream().collect(Collectors.toSet());
+        System.out.println("After removed Duplicates " + collect2);
 
         // Find the numbers starts with 1in the given list
         List<Integer> list6 = Arrays.asList(12,4,56,12,10);

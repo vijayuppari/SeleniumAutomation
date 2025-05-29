@@ -16,6 +16,19 @@ public class CommonelementsinbothArrays {
         fetchCommonelements(xyz,abc);
         fetchCommonelementslist(list1,list2);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     private static void fetchCommonelements(int[] xyz, int[] abc) {

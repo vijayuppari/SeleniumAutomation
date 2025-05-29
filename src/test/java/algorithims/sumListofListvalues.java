@@ -3,6 +3,7 @@ package algorithims;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class sumListofListvalues {
 
@@ -19,9 +20,11 @@ public class sumListofListvalues {
 
         List<List<Integer>> lists = Arrays.asList(list1, list2, list3);
 
-        Integer collect = lists.stream().flatMap(s -> s.stream()).collect(Collectors.summingInt(Integer::intValue));
+        Integer collect = lists.stream().flatMap(s -> s.stream()).mapToInt(Integer::intValue).sum();
         System.out.println(collect);
 
-
+        Stream<Integer> integerStream = lists.stream().flatMap(s -> s.stream());
+        Integer reduce = integerStream.reduce(0, Integer::sum);
+        System.out.println(reduce);
     }
 }

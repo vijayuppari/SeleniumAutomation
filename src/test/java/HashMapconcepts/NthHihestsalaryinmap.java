@@ -71,4 +71,5 @@ public class NthHihestsalaryinmap {
                .get(num-1);
     }
 
+
 }

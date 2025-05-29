@@ -62,7 +62,7 @@ public class StudentImpl {
 
         // Get the Average age of students
         Map<String, Double> resultsavgg = students.stream().collect(Collectors.groupingBy(Student::getGender, Collectors.averagingInt(Student::getAge)));
-       // System.out.println(resultsavgg);
+       //System.out.println(resultsavgg);
 
         // Find the highest rank in each dep
         Map<String, Optional<Student>> collect = students.stream().collect(Collectors.groupingBy(Student::getDept, Collectors.minBy(Comparator.comparing(Student::getRank))));

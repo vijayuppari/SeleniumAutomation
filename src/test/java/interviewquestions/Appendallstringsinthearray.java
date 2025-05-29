@@ -9,8 +9,8 @@ public class Appendallstringsinthearray {
 
     public static void main(String[] args) {
 
-        String [] arr = {"vijay","swamy","venky"};
-        String collect = Stream.of(arr).collect(Collectors.joining());
+        String [] arr = new String[]{"vijay","swamy","venky"};
+        String collect = Stream.of(arr).collect(Collectors.joining(":"));
         System.out.println(collect);
 
 

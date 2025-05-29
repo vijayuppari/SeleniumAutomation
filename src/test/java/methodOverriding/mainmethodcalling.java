@@ -15,8 +15,8 @@ public class mainmethodcalling {
         Dog dogp = new Lesadog();
         dogp.barking();
 
-        // Its not possible and we will get Classcast exception-
-      /*  Lesadog ldog= (Lesadog) new Dog();
+        // Its not possible and we will get Classcast exception- Down casting not possible
+       /*Lesadog ldog= (Lesadog) new Dog();
         ldog.barking();*/
 
         System.out.println(dogp.color);

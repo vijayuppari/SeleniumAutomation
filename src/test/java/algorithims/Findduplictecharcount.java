@@ -50,10 +50,10 @@ public class Findduplictecharcount {
 
     // Approach 2:
 
-    public static void main5(String[] args) {
+    public static void main(String[] args) {
 
         String str ="vijay kumar uppari";
-        String str1 ="vijay kumar uppari";
+        String str1 ="vijay kumar uppariuu";
         String[] arr = str.toUpperCase().split("");
 
         Map<String, Long> collect = Arrays.stream(arr).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
@@ -66,7 +66,7 @@ public class Findduplictecharcount {
     }
 
     // Reverse words in sentence
-    public static void main3(String[] args) {
+    public static void main12(String[] args) {
 
         StringBuilder sbFinal = new StringBuilder();
         StringBuilder sbword = new StringBuilder();
@@ -82,11 +82,14 @@ public class Findduplictecharcount {
     }
 
     // remove duplicates from string
-    public static void main(String[] args) {
+    public static void main25(String[] args) {
+
 
         String str ="vijaykumaruppari";
-        Set<String> hset = new HashSet<>();
-        Arrays.stream(str.split("")).collect(Collectors.toSet()).forEach(System.out::println);
+       String sb = str.chars().distinct().mapToObj(c -> String.valueOf((char) c)).collect(Collectors.joining());
+        System.out.println(sb);
+       // Arrays.stream(str.split("")).collect(Collectors.toSet()).forEach(x->System.out.print(x));
+      //  System.out.println("\n");
 
     }
 

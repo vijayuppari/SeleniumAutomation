@@ -1,6 +1,7 @@
 package LeetcodeByRetarget;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class jewelsandstones {
 
@@ -18,8 +19,7 @@ public class jewelsandstones {
     }
 
     public static void main(String[] args) {
-        System.out.println(jewlsandstones("aA","aAAbbbbb"));
+       System.out.println(jewlsandstones("aA","aAAbbbbb"));
         System.out.println(jewlsandstones("z","ZZZ"));
-
     }
 }

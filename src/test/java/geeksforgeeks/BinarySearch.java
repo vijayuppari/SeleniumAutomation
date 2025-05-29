@@ -12,8 +12,6 @@ public class BinarySearch {
         int arr[] = new int[]{2,6,1,10,5,89,45,34};
         Arrays.sort(arr);
         System.out.println(binarySearch(arr,0,arr.length-1,2));
-
-
     }
     public static int binarySearch(int arr[], int first, int last, int target){
 
@@ -36,6 +34,12 @@ public class BinarySearch {
         }
         return mid;
     }
-
+//public static void serachKeyword()
+//{
+//    webdriver driver = new chromeDriver();
+//    driver.manage().window().maximize();
+//    driver.get("https://www.google.com/");
+//
+//}
 
 }

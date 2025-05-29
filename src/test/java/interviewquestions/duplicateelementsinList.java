@@ -12,9 +12,14 @@ public class duplicateelementsinList {
         System.out.println("Duplicate Elements are " + dup);*/
 
 
-        //
-        Set<Integer> hset = new HashSet<>();
+
+        /*Set<Integer> hset = new HashSet<>();
         List<Integer> collect = elements.stream().filter(e -> !hset.add(e)).distinct().collect(Collectors.toList());
+        System.out.println("Duplicate Elements are " + collect);*/
+
+        String str= "vijaykumaruppari";
+        Set<String> hset = new HashSet<>();
+        List<String> collect = Arrays.stream(str.split("")).filter(e -> !hset.add(e)).collect(Collectors.toList());
         System.out.println("Duplicate Elements are " + collect);
     }
 }
